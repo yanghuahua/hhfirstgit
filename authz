@@ -94,7 +94,7 @@ ppm_prv_r_grp = zhangcz,liaowei,sunzy,jingcheng,moyp,chengjp,liuzq,zhangtao6,xum
 
 ## frame ##########
 #frame Dpt
-framegrp = guanjf,liuzq2,xiexb,wujs,chenf,huangyj
+framegrp = guanjf,liuzq2,xiexb,wujs,chenf,huangyj,chenyl
 #ec-csb group
 ec_csbgrp = chenly,xuhui5,liusd3,xiejf,xujian2,wufeng
 
