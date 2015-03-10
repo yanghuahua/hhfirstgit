@@ -4,3 +4,4 @@
 /usr/local/apache/bin/htpasswd -b /home/svn/bss_svn/conf/passwd chenyl  chenylcyl
 zengjia yihang 
  
+现在在推送一次
