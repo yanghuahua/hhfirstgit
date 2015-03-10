@@ -1,0 +1,530 @@
+### This file is an example authorization file for svnserve.
+### Its format is identical to that of mod_authz_svn authorization
+### files.
+### As shown below each section defines authorizations for the path and
+### (optional) repository specified by the section name.
+### The authorizations follow. An authorization line can refer to:
+###  - a single user,
+###  - a group of users defined in a special [groups] section,
+###  - an alias defined in a special [aliases] section,
+###  - all authenticated users, using the '$authenticated' token,
+###  - only anonymous users, using the '$anonymous' token,
+###  - anyone, using the '*' wildcard.
+###
+### A match can be inverted by prefixing the rule with '~'. Rules can
+### grant read ('r') access, read-write ('rw') access, or no access
+### ('').
+[groups]
+#leader group
+leader =cmsys,guanjf,chenjz,zhengcc,admin,liucm,lilin,wengsr
+#read only group
+readuser = crm
+
+## NCRM ##########
+
+ncrm_scm_grp =yanghh,guoll2,xuehao2
+ncrm_ld_grp=zhengcc,chenjz,lilin,wengsr,fanggc,zhuangzp,liujs7
+
+#ncrm core group
+ncrm_core_grp =yangyj2,raoly,zhangg,linwy,youjb,wangfeng13,wenhy,linyl5,yangjb,weiqh,wangsc,chenzui,zhangyl10,wengzl
+#ncrm sc group
+ncrm_sc_grp = dongliang2,lvzj,kangliang,qiaolong,liucy5,pujiang3,chengs3,liuzq,tangqi,liuj,pengyb,xiaofr,jiangbing,chenliang9,zhouyy2,penglj,wangfb2,shenjun,zhanght5,chenyuan2,yangjh5
+#ncrm yn group
+ncrm_yn_grp =hezf2,xiewen,zhujj,jinyj,guxz2,zhouyh6,liuyj6,xuqi,guoxm,zhengys,lijia3,linxh3,chensheng,linwy,fenghui3,xiewei3,chenqiong3,longzc,youjb
+#ncrm  xj group
+ncrm_xj_grp =xianwei,wulei3,xugang5,nanqing,chenfy,hudeng,kangning,liujie13,fengmj,jinsh3,linxh3,chenwc5,linsz
+
+#ncrm rule  core group
+ncrm_rule_core_grp =raoly,linwy,kezy
+#ncrm rule sc group
+ncrm_rule_sc_group =liujia3,chenliang9,zhouyy2
+#ncrm rule yn group
+ncrm_rule_yn_group =guoxm,zhouyh6,liuyj6,zhanggz,shensw
+#ncrm rule xj group
+ncrm_rule_xj_group = 
+
+#ncrm_reader_grp
+ncrm_reader_grp=longzc
+
+###############################################################################################################
+
+
+
+
+################################################################################################
+
+## CRM2.0 ##########
+#crm 2.0 core group
+crm2_ld_grp = wengzl,linsz,zhengwen,lirs3
+crm2_mem_grp = wujs,liujs7,youjb,xuzy3,zhuangzp,wengzl,wengsr,yanghh,zhangg,yangjb,shism,wanghb,wuyj6,huangzq,maty3,dongzw,huangzq,raoly,linhy,xiexb,lvzl,wangd,hezf,liujs,linmw,wangfb,huangdy,liuzx,tangzy,linxh3,chenf,huangzq,wangf,renxq2,linsz,zhouy,weixx,zhougl,jinxy,jingbw,wanghd,wangfx,guotb,liuyl8,liucm,zhengh,lixl5,zhanght5,lizj,kangpb,linsz,xuzy3,zhengwen,zhangjs3,duxq,liss2,linwy,lilin,linyl5,liuzq,shenlq,wucm3,luocl,chensheng,hezhong
+
+#crm2.0 shandong group
+crm2_sd_ld = wengzl
+crm2_sd_mem = wujs,youjb,lianld,yangyj2,ruanqj,lilin,linqg,lizj,linyl5,zhuangzp,xuzy3,linwy,wengzl,lixl5,wangdong,wengsr
+crm2_sd_local = sunlei,fanggc,yuanq,xuh,sundp,zuodh,zhangxm,zhangyb
+
+
+#ctg group ############
+ctg_grp = wujs,liujs7,youjb,xuzy3,zhuangzp,wengzl,wengsr
+
+#crm pad group #####
+padcrm_grp = wengsr,zhangg,yanghh
+
+
+## PPM ##########
+ppm_ld = sunle,jianjy
+ppm_jt_new_r_grp = lianghd,wucl5,fumy,baihf,liuning,wangjing7,chenyali,wulm,yangbc
+ppm_jt_new_w_grp = lianghd,wucl5,liuning,wangjing7
+ppm_jt_old_r_grp = lianghd,wucl5,fumy,baihf,liuning,wangjing7,chenyali,wulm
+ppm_jt_old_w_grp = liuning,wangjing7
+ppm_jt_cfg_rw_grp = lianghd,wucl5,fumy,baihf,liuning,wangjing7,chenyali,wulm,yangbc
+ppm_prv_rw_grp = dongfr,zhousong
+ppm_prv_rw_bj_grp = zhangcz
+ppm_prv_rw_tj_grp = liaowei
+ppm_prv_rw_hlj_grp = sunzy
+ppm_prv_rw_jl_grp = jingcheng
+ppm_prv_rw_qh_grp = moyp
+ppm_prv_rw_js_grp = chengjp
+ppm_prv_rw_sc_grp = liuzq
+ppm_prv_rw_hn_grp = zhangtao6
+ppm_prv_rw_gz_grp = xuml,liumc3
+ppm_prv_rw_yn_grp = zhousong
+ppm_prv_rw_sd_grp = quzhe2
+ppm_prv_r_grp = zhangcz,liaowei,sunzy,jingcheng,moyp,chengjp,liuzq,zhangtao6,xuml,liumc3,quzhe2
+
+## frame ##########
+#frame Dpt
+framegrp = guanjf,liuzq2,xiexb,wujs,chenf,huangyj
+#ec-csb group
+ec_csbgrp = chenly,xuhui5,liusd3,xiejf,xujian2,wufeng
+
+## E-crm ##########
+#E-crm  group
+ecrm_fz_grp = zhengqj3,linsz,linyl5
+
+ecrm_sc_w_grp  =  yanghh,zhangg,zhuangzp,yangyj2,linwy,wengsr,hezf2,hunj,zhaojian,hanlong,linsz,hezhong,linyl5,jinsh3,yangjb,zhengwen,zhaojian2,huocong66
+ecrm_sc_r_grp  = jinsh3,peining,huoc,zhangzt,wangdh3,huocong66,weixc,jinsh,huangyong
+
+ecrm_tj_w_grp  = yanghh,zhangg,zhuangzp,yangyj2,linwy,wengsr,hezf2,hunj,zhaojian,hanlong,linsz,hezhong,linyl5,yangjb,zhengwen,zhaojian2
+ecrm_tj_r_grp = linyl5,huangyong
+
+ecrm_bj_w_grp  =yanghh,zhangg,zhuangzp,yangyj2,linwy,wengsr,hezf2,hunj,zhaojian,hanlong,linsz,hezhong,linyl5,yangjb,wangsc,huocong66
+ecrm_bj_r_grp = wangdh3,zhouhang,sunlei6,peining,huoc,zhangzt,jinsh3
+
+ecrm_yn_w_grp  = yanghh,zhangg,zhuangzp,yangyj2,linwy,wengsr,hezf2,wujs,youjb,hunj,zhengmx,linyl5
+ecrm_yn_r_grp = linyl5
+
+ecrm_qh_w_grp  = yanghh,zhangg,zhuangzp,yangyj2,linwy,wengsr,wujs,youjb,hunj,wangping4,linyl5
+ecrm_qh_r_grp = linyl5
+
+ecrm_hn_w_grp  = hezhong,jinsh3,wengsr,yangjb
+ecrm_hn_r_grp = jinsh,weixc
+
+
+
+#ES LEADER GROUP###############3
+crm_es_manager=hezm2
+#ES MEMBER GROUP
+crm_es_member=hezhong,yangjb,zhengqj3,jiangxm3
+#ES LOCAL GROUP
+crm_es_local=zhangtao6
+
+#SM leader group######################
+sm_manager=chenf,linyl5
+#SM member group ##
+sm_member=liuzx,wangc,lianld,linmw
+#SM local group #
+sm_local=chenf,linyl5
+
+#portal leader group ##################
+portal_manager=chenf,linyl5
+#SM member group
+portal_member=linyl5
+#SM local group
+portal_local=chenf,linyl5
+
+##INTERACTION group #######################
+int_grp = yangyj2,chenf,linsz,xuzy3,xuhc,zhangcp,linyl5,wangdh3
+
+#ims group ##################
+ims_grp = yangyj2
+
+#bms group ###################
+bms_grp = zhuangzp,huangdy,shenlq,yangjb,liucm,wangjr5,lixl5,zhengqj3
+ 
+#bss360 group ###################
+bss360_grp =huangyj,jiangxm3,lixl5,shism
+
+#exam_group ########
+exam_grp=yangjb,huangdy,chenf
+
+#ssop group #####
+ssop_grp=yangyj2,raoly,linsz,yangjb,wangsc
+
+#SaleOutlets grp#####
+channel_grp = xiexb,wujs,shenlq,yangjb,huangdy,jiangxm3,raoly,lixl5,wangsc
+
+#BssDataExtract group ##########
+bde_grp=yangjb,lixl5,jiangxm3,wangsc
+
+#MSGP group ###########
+msgp_grp=raoly,lixl5,yangjb,wangsc
+
+#cep group ####
+cep_grp = huangyj,jiangxm3,wengsr
+
+#qdmh group ##########
+qdmh_grp = wengsr,yanghh,zhangg,lixl5,zhuangzp,lilei6,chenyuan2,zhanght5,hezm2,chenwc5,zhangyl10
+
+#四川本地工程组##########
+sc_crm_local_grp = wengsr,yanghh,zhangg,wujs,liujs7,youjb,zhuangzp,wengzl,chenf,zhanght5,chenyuan2
+
+#crm2013 group ########
+crm2013_grp = jianjy,linqg,xiexb,chenf,linxm,lilin,liss2,raoly,liucm,maty3,zhengwen,chenqiong,liujs7,huangyj,jinxy,zhangjs3,wujs,wucm3,wengsr,fenghui3
+
+###实名制认证 (缺ios版本)############################
+#安卓版本的实名制认证版本 group ####
+realname_android_grp = wengsr,yanghh,zhangg,zhuangzp,xiewen,hanlong,hezhong,yangjb,zhengwen,linyl5,wangsc
+realname_android_grp_r=wanghan
+
+#实名制认证WEB集团版本 group #########
+realname_web_jt_grp = yanghh,zhuangzp,wengsr,linsz,zhengwen,hezhong,yangjb
+#实名制认证WEB省份版本  group ############
+realname_web_prv_grp = yanghh,zhangg,zhuangzp,yangyj2,wengsr,zhengwen,hezhong,yangjb,wangsc
+
+
+#version group ###
+ver_grp = lixl5,liucm,shism,wengsr,wengzl
+
+#SRD GROUP #######
+srd_grp = zhengcc,yangyj2,yangjb,fanggc,sunle,liucm,liuyl8,lilin,wujs,wengsr,linqg
+#pre group #######
+pre_grp = liuyl8,guanjf,chenjz,zhengcc,renxq,linxm2,liucm,wengsr,shism
+
+##### IOS CRM GROUP ##########
+ios_crm_fz_rw_grp = yangjb,linyl5
+
+#####order_center#####
+orc_core_grp =yangjb,hezhong,chenyuan2,linyl5,zhengqj3
+
+###### personal #####
+pesn_grp =yangyj2
+
+#####################################################################################################
+###PERMISSION                                                                                     #
+#####################################################################################################
+[bss:/]
+@leader = rw
+
+[hxbss:/]
+@leader = rw
+
+[hxbss:/Core_Document]
+* = r
+#### NCRM #######################################
+[hxbss:/NEW_BIZHALL]
+@ncrm_ld_grp = rw
+
+
+#### CSB&FRAME #######################################
+[bss:/FrameWork]
+@framegrp = rw
+
+[bss:/FrameWork/Document/CSB]
+@ec_csbgrp = r
+
+[bss:/FrameWork/Source/CSB]
+@ec_csbgrp = rw
+
+[bss:/CSB]
+@ec_csbgrp = r
+@framegrp = rw
+
+[bss:/FRAME]
+@framegrp = rw
+
+[bss:/NoSQL]
+@framegrp = rw
+
+###portal & sm####################
+[bss:/SM]
+@sm_manager = rw
+@sm_member = r
+@sm_local = r
+[bss:/SM/DB]
+@sm_member = rw
+[bss:/SM/DOCUMENT]
+[bss:/SM/SOURCE]
+@sm_member = rw
+[bss:/SM/SOURCE/BRANCH/]
+@sm_local = rw
+
+[bss:/PORTAL]
+@sm_manager = rw
+@sm_member = r
+@sm_local = r
+[bss:/PORTAL/DB]
+@portal_member = rw
+[bss:/PORTAL/DOCUMENT]
+[bss:/PORTAL/SOURCE]
+@portal_member = rw
+[bss:/PORTAL/SOURCE/BRANCH/]
+@portal_local = rw
+
+###something #######################################################
+[bss:/imsUnite]
+@ims_grp = rw
+
+[bss:/INTERACTION]
+@int_grp =rw
+
+[bss:/BMS]
+@bms_grp = rw
+
+[bss:/examManager]
+@exam_grp= rw
+
+[bss:/BMM]
+@bss360_grp = rw
+
+[hxbss:/cep]
+@cep_grp = rw
+
+[bss:/ssop]
+@ssop_grp = rw
+##################################
+[bss:/CRM_ES]
+@crm_es_manager = rw
+@crm_es_member = r
+@crm_es_local = r
+[bss:/CRM_ES/DB]
+@crm_es_member = rw
+[bss:/CRM_ES/DOCUMENT]
+
+[bss:/CRM_ES/SOURCE]
+@crm_es_member = rw
+[bss:/CRM_ES/SOURCE/BRANCH/HN_VERSION]
+@crm_es_local = rw
+####################################
+[bss:/SaleOutlets]
+@channel_grp = rw
+
+[bss:/BssDataExtract]
+@bde_grp = rw
+
+[bss:/MSGP]
+@msgp_grp = rw
+
+
+[hxbss:/QDMH_version]
+@qdmh_grp = rw
+
+####crm2.0 #######################################
+[hxbss:/provinceAssemble]
+@crm2_ld_grp = rw
+@crm2_mem_grp = rw
+
+[hxbss:/CRM2013]
+@crm2013_grp = rw
+
+[hxbss:/SD_version]
+@crm2_sd_ld = rw
+@crm2_sd_mem = rw
+@crm2_sd_local = r
+
+
+[hxbss:/BASE-CTG]
+@ctg_grp = rw
+
+[hxbss:/SC_version]
+@sc_crm_local_grp = rw
+
+[hxbss:/CRM_FOR_PAD]
+@padcrm_grp = rw
+#####other manage################################
+[hxbss:/version repository]
+@ver_grp = rw
+
+[hxbss:/Pre_program]
+@pre_grp =rw
+
+[hxbss:/CRM_SRD] 
+@srd_grp = rw
+
+[hxbss:/JT_Document]
+* = r
+lilin = rw
+lixl5 = rw
+
+#### PPM #######################################
+[bss:/PPM]
+@ppm_ld = rw
+
+[bss:/PPM_JT]
+@ppm_ld = rw
+@ppm_jt_new_r_grp = r
+@ppm_jt_new_w_grp = rw
+
+[bss:/PPM_PRV/SOURCE/TRUNK]
+@ppm_prv_r_grp = r
+
+[bss:/PPM_JT/SOURCE/TRUNK/新版本]
+@ppm_jt_new_w_grp = rw
+
+[bss:/PPM_JT/SOURCE/TRUNK/老版本]
+@ppm_jt_old_r_grp = r
+@ppm_jt_old_w_grp = rw
+
+[bss:/PPM_JT/SOURCE/TRUNK/一点配置]
+@ppm_jt_cfg_rw_grp = rw
+
+[bss:/PPM_PRV]
+@ppm_prv_rw_grp = rw
+@ppm_ld = rw
+[bss:/PPM_PRV/SOURCE/BRANCH/beijing]
+@ppm_prv_rw_bj_grp = rw
+
+[bss:/PPM_PRV/SOURCE/BRANCH/guizhou]
+@ppm_prv_rw_gz_grp = rw
+
+[bss:/PPM_PRV/SOURCE/BRANCH/heilongjiang]
+@ppm_prv_rw_hlj_grp = rw
+
+[bss:/PPM_PRV/SOURCE/BRANCH/henan]
+@ppm_prv_rw_hn_grp = rw
+
+[bss:/PPM_PRV/SOURCE/BRANCH/jiangsu]
+@ppm_prv_rw_js_grp = rw
+
+[bss:/PPM_PRV/SOURCE/BRANCH/qinghai]
+@ppm_prv_rw_qh_grp = rw
+
+[bss:/PPM_PRV/SOURCE/BRANCH/shandong]
+@ppm_prv_rw_sd_grp = rw
+
+[bss:/PPM_PRV/SOURCE/BRANCH/sichuan]
+@ppm_prv_rw_sc_grp = rw
+
+[bss:/PPM_PRV/SOURCE/BRANCH/tianjin]
+@ppm_prv_rw_tj_grp = rw
+
+[bss:/PPM_PRV/SOURCE/BRANCH/yunnan]
+@ppm_prv_rw_yn_grp = rw
+
+
+###实名制########################################################
+[hxbss:/TJ_VERSION]
+@realname_web_prv_grp = rw
+
+[hxbss:/JT_CUST_AUTH]
+@realname_web_jt_grp = rw
+
+[hxbss:/androidCRM]
+@realname_android_grp = rw
+@realname_android_grp_r = r
+
+##E-crm###########################################
+[hxbss:/SC_SALE_VERSION]
+@ecrm_fz_grp = rw
+@ecrm_sc_w_grp = rw
+@ecrm_sc_r_grp = r
+
+[hxbss:/TJ_SALE_VERSION]
+@ecrm_fz_grp = rw
+@ecrm_tj_w_grp = rw
+@ecrm_tj_r_grp = r
+
+[hxbss:/BJ_SALE_VERSION]
+@ecrm_fz_grp = rw
+@ecrm_bj_w_grp = rw
+@ecrm_bj_r_grp = r
+
+[hxbss:/YN_SALE_VERSION]
+@ecrm_fz_grp = rw
+@ecrm_yn_w_grp = rw
+@ecrm_yn_r_grp = r
+
+
+[hxbss:/QH_SALE_VERSION]
+@ecrm_fz_grp = rw
+@ecrm_qh_w_grp = rw
+@ecrm_qh_r_grp = r
+
+[hxbss:/HN_SALE_VERSION]
+@ecrm_fz_grp = rw
+@ecrm_hn_w_grp = rw
+@ecrm_hn_r_grp = r
+
+###### ios-crm  #####################################
+[hxbss:/IOS_CRM_VERSION]
+@ios_crm_fz_rw_grp = rw
+
+###### order_center#############################
+[hxbss:/ORDER_CENTER]
+@orc_core_grp =rw
+
+######PERSONAL #################
+[bss:/PERSONAL/yangyj]
+@pesn_grp =rw
+
+
+################################### NCRM ###############################################
+[hxbss:/NCRM]
+@ncrm_scm_grp=rw
+
+[hxbss:/NCRM/baseLine]
+@ncrm_ld_grp = rw
+@ncrm_core_grp=r
+@ncrm_sc_grp =r
+@ncrm_yn_grp =r
+@ncrm_xj_grp =r
+@ncrm_rule_core_grp =r
+@ncrm_rule_sc_group =r
+@ncrm_rule_yn_group =r
+@ncrm_rule_xj_group =r
+@ncrm_reader_grp =r
+
+[hxbss:/NCRM/baseLine/Source/trunk/local/YN_TRUNK]
+@ncrm_yn_grp =r
+[hxbss:/NCRM/baseLine/Source/trunk/local/XJ_TRUNK]
+@ncrm_xj_grp =r
+
+[hxbss:/NCRM/baseLine/Document/四川]
+@ncrm_sc_grp =rw
+@ncrm_core_grp=rw
+[hxbss:/NCRM/baseLine/Document/新疆]
+@ncrm_xj_grp =rw
+@ncrm_core_grp=rw
+[hxbss:/NCRM/baseLine/Document/云南]
+@ncrm_yn_grp =rw
+@ncrm_core_grp=rw
+[hxbss:/NCRM/baseLine/Document/公共]
+@ncrm_core_grp=rw
+
+### xj temp ####
+[hxbss:/NCRM/baseLine/Source/branches/xjweb]
+@ncrm_xj_grp =rw
+@ncrm_core_grp=rw
+
+[hxbss:/NCRM/baseLine/Source/trunk/rule]
+@ncrm_rule_core_grp = rw
+[hxbss:/NCRM/baseLine/Source/trunk/rule/local/sc_trunk]
+@ncrm_rule_sc_group =r
+[hxbss:/NCRM/baseLine/Source/trunk/rule/local/yn_trunk]
+@ncrm_rule_yn_group =r
+[hxbss:/NCRM/baseLine/Source/trunk/rule/local/xj_trunk]
+@ncrm_rule_xj_group =r
+
+
+[hxbss:/NCRM/publishLine]
+@ncrm_ld_grp = rw
+@ncrm_core_grp=r
+@ncrm_sc_grp =r
+@ncrm_yn_grp =r
+@ncrm_xj_grp =r
+@ncrm_rule_core_grp =r
+@ncrm_rule_sc_group =r
+@ncrm_rule_yn_group =r
+@ncrm_rule_xj_group =r
+@ncrm_reader_grp =r
+##################################### NCRM #############################################

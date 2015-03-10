@@ -1,0 +1,5 @@
+/usr/local/apache/bin/htpasswd -b /home/svn/bss_svn/conf/passwd  guoll2  61565
+/usr/local/apache/bin/htpasswd -b /home/svn/bss_svn/conf/passwd  yangjh5  yangjh54321
+/usr/local/apache/bin/htpasswd -b /home/svn/bss_svn/conf/passwd kezy  kzykij
+/usr/local/apache/bin/htpasswd -b /home/svn/bss_svn/conf/passwd chenyl  chenylcyl
+
