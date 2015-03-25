@@ -23,14 +23,14 @@ readuser = crm
 ## NCRM ##########
 
 ncrm_scm_grp =yanghh,guoll2,xuehao2
-ncrm_ld_grp=zhengcc,chenjz,lilin,wengsr,fanggc,zhuangzp,liujs7
+ncrm_ld_grp=zhengcc,chenjz,lilin,wengsr,fanggc,zhuangzp,liujs7,zhengys,zhanght5
 
 #ncrm core group
 ncrm_core_grp =yangyj2,raoly,zhangg,linwy,youjb,wangfeng13,wenhy,linyl5,yangjb,weiqh,wangsc,chenzui,zhangyl10,wengzl
 #ncrm sc group
-ncrm_sc_grp = dongliang2,lvzj,kangliang,qiaolong,liucy5,pujiang3,chengs3,liuzq,tangqi,liuj,pengyb,xiaofr,jiangbing,chenliang9,zhouyy2,penglj,wangfb2,shenjun,zhanght5,chenyuan2,yangjh5
+ncrm_sc_grp = dongliang2,lvzj,kangliang,qiaolong,liucy5,pujiang3,chengs3,liuzq,tangqi,liuj,pengyb,xiaofr,jiangbing,chenliang9,zhouyy2,penglj,wangfb2,shenjun,chenyuan2,yangjh5
 #ncrm yn group
-ncrm_yn_grp =hezf2,xiewen,zhujj,jinyj,guxz2,zhouyh6,liuyj6,xuqi,guoxm,zhengys,lijia3,linxh3,chensheng,linwy,fenghui3,xiewei3,chenqiong3,longzc,youjb
+ncrm_yn_grp =hezf2,xiewen,zhujj,jinyj,guxz2,zhouyh6,liuyj6,xuqi,guoxm,lijia3,linxh3,chensheng,linwy,fenghui3,xiewei3,chenqiong3,longzc,youjb
 #ncrm  xj group
 ncrm_xj_grp =xianwei,wulei3,xugang5,nanqing,chenfy,hudeng,kangning,liujie13,fengmj,jinsh3,linxh3,chenwc5,linsz
 
@@ -188,7 +188,7 @@ realname_android_grp = wengsr,yanghh,zhangg,zhuangzp,xiewen,hanlong,hezhong,yang
 realname_android_grp_r=wanghan
 
 #实名制认证WEB集团版本 group #########
-realname_web_jt_grp = yanghh,zhuangzp,wengsr,linsz,zhengwen,hezhong,yangjb
+realname_web_jt_grp = yanghh,zhuangzp,wengsr,linsz,zhengwen,hezhong,yangjb,linxh3
 #实名制认证WEB省份版本  group ############
 realname_web_prv_grp = yanghh,zhangg,zhuangzp,yangyj2,wengsr,zhengwen,hezhong,yangjb,wangsc
 

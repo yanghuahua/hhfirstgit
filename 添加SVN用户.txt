@@ -6,3 +6,8 @@ zengjia yihang
  
 现在在推送一次
 branch modify
+
+/usr/local/apache/bin/htpasswd -b /home/svn/bss_svn/conf/passwd admin  adminai0320
+
+/usr/local/apache/bin/htpasswd -b /home/svn/bss_svn/conf/passwd  xianwei   xianwei3D
+/usr/local/apache/bin/htpasswd -b /home/svn/bss_svn/conf/passwd  zhangzq10  zhangzq0323
