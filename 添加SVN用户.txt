@@ -11,3 +11,8 @@ branch modify
 
 /usr/local/apache/bin/htpasswd -b /home/svn/bss_svn/conf/passwd  xianwei   xianwei3D
 /usr/local/apache/bin/htpasswd -b /home/svn/bss_svn/conf/passwd  zhangzq10  zhangzq0323
+/usr/local/apache/bin/htpasswd -b /home/svn/bss_svn/conf/passwd  zhaism  zhaism1503
+
+/usr/local/apache/bin/htpasswd -D /home/svn/bss_svn/conf/passwd  fanggc
+/usr/local/apache/bin/htpasswd -D /home/svn/bss_svn/conf/passwd  renxq2
+/usr/local/apache/bin/htpasswd -D /home/svn/bss_svn/conf/passwd  ruanqj

@@ -23,16 +23,16 @@ readuser = crm
 ## NCRM ##########
 
 ncrm_scm_grp =yanghh,guoll2,xuehao2
-ncrm_ld_grp=zhengcc,chenjz,lilin,wengsr,fanggc,zhuangzp,liujs7,zhengys,zhanght5
+ncrm_ld_grp=zhengcc,chenjz,lilin,wengsr,zhuangzp,liujs7,zhengys,zhanght5
 
 #ncrm core group
-ncrm_core_grp =yangyj2,raoly,zhangg,linwy,youjb,wangfeng13,wenhy,linyl5,yangjb,weiqh,wangsc,chenzui,zhangyl10,wengzl
+ncrm_core_grp =yangyj2,raoly,zhangg,linwy,youjb,wangfeng13,wenhy,linyl5,yangjb,weiqh,wangsc,chenzui,zhangyl10,wengzl,lirs3
 #ncrm sc group
 ncrm_sc_grp = dongliang2,lvzj,kangliang,qiaolong,liucy5,pujiang3,chengs3,liuzq,tangqi,liuj,pengyb,xiaofr,jiangbing,chenliang9,zhouyy2,penglj,wangfb2,shenjun,chenyuan2,yangjh5
 #ncrm yn group
 ncrm_yn_grp =hezf2,xiewen,zhujj,jinyj,guxz2,zhouyh6,liuyj6,xuqi,guoxm,lijia3,linxh3,chensheng,linwy,fenghui3,xiewei3,chenqiong3,longzc,youjb
 #ncrm  xj group
-ncrm_xj_grp =xianwei,wulei3,xugang5,nanqing,chenfy,hudeng,kangning,liujie13,fengmj,jinsh3,linxh3,chenwc5,linsz
+ncrm_xj_grp =xianwei,wulei3,xugang5,nanqing,chenfy,hudeng,kangning,liujie13,fengmj,jinsh3,linxh3,chenwc5,linsz,zhaism,xugang5
 
 #ncrm rule  core group
 ncrm_rule_core_grp =raoly,linwy,kezy
@@ -41,7 +41,7 @@ ncrm_rule_sc_group =liujia3,chenliang9,zhouyy2
 #ncrm rule yn group
 ncrm_rule_yn_group =guoxm,zhouyh6,liuyj6,zhanggz,shensw
 #ncrm rule xj group
-ncrm_rule_xj_group = 
+ncrm_rule_xj_group =xianwei,zhangzq10
 
 #ncrm_reader_grp
 ncrm_reader_grp=longzc
@@ -61,7 +61,7 @@ crm2_mem_grp = wujs,liujs7,youjb,xuzy3,zhuangzp,wengzl,wengsr,yanghh,zhangg,yang
 #crm2.0 shandong group
 crm2_sd_ld = wengzl
 crm2_sd_mem = wujs,youjb,lianld,yangyj2,ruanqj,lilin,linqg,lizj,linyl5,zhuangzp,xuzy3,linwy,wengzl,lixl5,wangdong,wengsr
-crm2_sd_local = sunlei,fanggc,yuanq,xuh,sundp,zuodh,zhangxm,zhangyb
+crm2_sd_local = sunlei,yuanq,xuh,sundp,zuodh,zhangxm,zhangyb
 
 
 #ctg group ############
@@ -162,7 +162,7 @@ exam_grp=yangjb,huangdy,chenf
 ssop_grp=yangyj2,raoly,linsz,yangjb,wangsc
 
 #SaleOutlets grp#####
-channel_grp = xiexb,wujs,shenlq,yangjb,huangdy,jiangxm3,raoly,lixl5,wangsc
+channel_grp = xiexb,wujs,shenlq,yangjb,huangdy,jiangxm3,raoly,lixl5,wangsc,fenghui3
 
 #BssDataExtract group ##########
 bde_grp=yangjb,lixl5,jiangxm3,wangsc
@@ -184,7 +184,7 @@ crm2013_grp = jianjy,linqg,xiexb,chenf,linxm,lilin,liss2,raoly,liucm,maty3,zheng
 
 ###实名制认证 (缺ios版本)############################
 #安卓版本的实名制认证版本 group ####
-realname_android_grp = wengsr,yanghh,zhangg,zhuangzp,xiewen,hanlong,hezhong,yangjb,zhengwen,linyl5,wangsc
+realname_android_grp = wengsr,yanghh,zhangg,zhuangzp,xiewen,hanlong,hezhong,yangjb,zhengwen,linyl5,wangsc,linxh3
 realname_android_grp_r=wanghan
 
 #实名制认证WEB集团版本 group #########
@@ -197,7 +197,7 @@ realname_web_prv_grp = yanghh,zhangg,zhuangzp,yangyj2,wengsr,zhengwen,hezhong,ya
 ver_grp = lixl5,liucm,shism,wengsr,wengzl
 
 #SRD GROUP #######
-srd_grp = zhengcc,yangyj2,yangjb,fanggc,sunle,liucm,liuyl8,lilin,wujs,wengsr,linqg
+srd_grp = zhengcc,yangyj2,yangjb,sunle,liucm,liuyl8,lilin,wujs,wengsr,linqg
 #pre group #######
 pre_grp = liuyl8,guanjf,chenjz,zhengcc,renxq,linxm2,liucm,wengsr,shism
 
@@ -513,7 +513,7 @@ lixl5 = rw
 [hxbss:/NCRM/baseLine/Source/trunk/rule/local/yn_trunk]
 @ncrm_rule_yn_group =r
 [hxbss:/NCRM/baseLine/Source/trunk/rule/local/xj_trunk]
-@ncrm_rule_xj_group =r
+@ncrm_rule_xj_group =rw
 
 
 [hxbss:/NCRM/publishLine]
